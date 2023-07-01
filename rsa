@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 from sys import argv
 import math
+import time
+import random
+
 """gets the first two factors of any number"""
 
 
@@ -43,3 +46,6 @@ def factors(filename):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: rsa <file>")
+        exit()
